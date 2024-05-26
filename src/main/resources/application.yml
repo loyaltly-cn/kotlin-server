@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://pailemapro.com:3306/databases?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
+    hikari:
+      username: root
+      password: root999
+      max-lifetime: 60000
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+  data:
+    redis:
+      host: pailemapro.com
+      port: 6379
+      password: root
+      database: 1
+      connect-timeout: 10000
+
+springdoc:
+  swagger-ui:
+    path: /doc/
+  api-docs:
+    path: /doc
+
+security:
+  permit-paths:
+   - "/auth/login/code"
+   - "/auth/login/password"
+   - "/error"
+   - "/sms"
+
+
+headers:
+  key: "X-entCloud"
+  value: "16e80910a48d21c91b96f5518d60c117"
+
+gain:
+  sms: "http://localhost:2000/"
+  oss: "http://localhost:2001/"
