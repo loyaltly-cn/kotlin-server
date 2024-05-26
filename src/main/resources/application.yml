@@ -4,10 +4,10 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://pailemapro.com:3306/databases?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://xxxxxx/databases?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
     hikari:
-      username: root
-      password: root999
+      username: xxxx
+      password: xxx
       max-lifetime: 60000
 
 
@@ -18,10 +18,10 @@ spring:
 
   data:
     redis:
-      host: pailemapro.com
-      port: 6379
-      password: root
-      database: 1
+      host: xxxxx
+      port: xxxx
+      password: xxxx
+      database: 0
       connect-timeout: 10000
 
 springdoc:
@@ -39,8 +39,8 @@ security:
 
 
 headers:
-  key: "X-entCloud"
-  value: "16e80910a48d21c91b96f5518d60c117"
+  key: "xxxxx"
+  value: "xxxxxxxxx"
 
 gain:
   sms: "http://localhost:2000/"
