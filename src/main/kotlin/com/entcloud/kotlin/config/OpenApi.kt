@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration
 class OpenApi {
 
     @Bean
-    fun customOpenAPI(): OpenAPI = OpenAPI().addServersItem( Server().url("https://pailemapro.com/api/")).info(Info().title("拍了吗API"))
+    fun customOpenAPI(): OpenAPI = OpenAPI().addServersItem( Server().url("xxxxxxxx")).info(Info().title("xxxxxx"))
 
     @Bean
     fun publicApi(): GroupedOpenApi = GroupedOpenApi.builder().group("public").pathsToMatch("/**").build()

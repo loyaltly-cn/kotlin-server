@@ -35,7 +35,7 @@ class Interceptor(
         if (entCloudHeaderValue === null || !entCloudHeaderValue.equals(headers.value)){
             response.apply {
                 status = 418
-                writer.print(Gson().toJson(ResponseBody("请联系无锡恒云科技获取API密匙")))
+                writer.print(Gson().toJson(ResponseBody("请联系xxxxx获取API密匙")))
             }
 
             return false

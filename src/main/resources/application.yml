@@ -4,10 +4,10 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://xxxxxx/databases?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost/databases?useUnicode=true&characterEncoding=utf-8&userSSL=true&serverTimezone=UTC
     hikari:
-      username: xxxx
-      password: xxx
+      username: root
+      password: databases
       max-lifetime: 60000
 
 
@@ -18,9 +18,8 @@ spring:
 
   data:
     redis:
-      host: xxxxx
-      port: xxxx
-      password: xxxx
+      host: localhost
+      port: 6379
       database: 0
       connect-timeout: 10000
 
