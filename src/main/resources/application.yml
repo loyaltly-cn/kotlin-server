@@ -23,12 +23,15 @@ spring:
       database: 0
       connect-timeout: 10000
 
+# openapi documents
 springdoc:
   swagger-ui:
     path: /doc/
   api-docs:
     path: /doc
 
+
+# 跳过验证的请求
 security:
   permit-paths:
    - "/auth/login/code"
@@ -37,10 +40,13 @@ security:
    - "/sms"
 
 
+# 自定义header
 headers:
   key: "xxxxx"
   value: "xxxxxxxxx"
 
+
+# 短信服务+oss
 gain:
   sms: "http://localhost:2000/"
   oss: "http://localhost:2001/"
